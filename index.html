@@ -217,9 +217,9 @@
     /* телефон: без прилипания и переворота страниц – надёжность важнее эффекта (3D-поворот + sticky ломается на части телефонов) */
     #plan { height: auto; }
     #plan [data-v-stage] { position: static; height: auto; padding: 1rem 0 2rem; }
-    #plan .nb { position: static; width: 100%; height: auto; margin: var(--v-4) 0 0; perspective: none; transform-style: flat; --lh: 1.6rem; --pad: 1.1rem; }
+    #plan .nb { position: static; display: flex; flex-direction: column; width: 100%; height: auto; margin: var(--v-4) 0 0; perspective: none; transform-style: flat; --lh: 1.6rem; --pad: 1.1rem; }
     #plan .nb__base, #plan .nb__staple, #plan .leaf--cover, #plan .leaf__back { display: none; }
-    #plan .leaf { position: static; width: 100%; height: auto; transform: none !important; margin-bottom: var(--v-4); }
+    #plan .leaf { position: static; order: var(--i); width: 100%; height: auto; transform: none !important; margin-bottom: var(--v-4); }
     #plan .leaf__face { position: static; inset: auto; border-radius: 3px; box-shadow: var(--v-e1); }
     #plan .leaf__face::after { display: none; }
     #plan .pg__hw { position: static; margin-top: var(--lh); }
